@@ -55,9 +55,10 @@ int main()
 		levelCount++;
 	}
 
+	wavelet.convertTo(wavelet, CV_8UC1);
 	imshow("wavelet", wavelet);
-
 	waitKey(0);
+
 	return 0;
 }
 
