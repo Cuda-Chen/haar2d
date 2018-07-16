@@ -8,7 +8,8 @@ set(CMAKE_BUILD_TYPE Debug)
 
 find_package(OpenCV REQUIRED)
 
-add_executable(haar2d main.cpp)
+#add_executable(haar2d main.cpp)
+add_executable(haar2d test.cpp dwt.cpp dwt.hpp)
 
 target_link_libraries(haar2d ${OpenCV_LIBS})
 
